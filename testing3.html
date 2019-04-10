@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<title>KurisuGamingBlog</title>
+<head>
+    <center><img src="Logo4.jpg" style="width:100%"></center>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  ul{
+    list-style:none;
+    font-size:25px;
+    font-family:Courier New;
+    color:#000000;
+      }
+
+      h3{
+        font-size:25px;
+    font-family:Courier New;
+      }
+h4{
+font-family:Helvetica;
+font-size:30px;
+
+  }
+  h5{
+    font-size:40px;
+    color:#000000;
+  }
+  h6{
+    font-family:Helvetica;
+font-size:50px;
+letter-spacing:3px;
+color:#000000;
+  }
+  
+
+  body{
+background-image: url(BG.jpg);
+background-size: cover;
+background-attachment: fixed;
+background filter: blur(8px);
+background-webkit-filter: blur(8px);
+}
+  body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {font-family: "Lato", sans-serif;}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 32px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.steam {
+  background: #000000;
+  color: white;
+}
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 28px 16px;
+  font-size: 17px;
+  width: 25%;
+
+}
+.tablink:hover {
+  background-color: #777;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.MyRiG{
+  
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+
+<div id="Home" class="tabcontent">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"><font color = "black">1 / 3</font></div>
+  <img src="MHW.png" style="width:100%">
+  <p1><strong><font color = "black"><font size = "30"><font face ="Book Antigua">Monster Hunter World: Game Review!</font><strong></p1>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><font color = "black">2 / 3</font></div>
+  <img src="R6.jpg" style="width:100%">
+  <p2><strong><font color = "black"><font size = "30"><font face ="Book Antigua">Tom Clancy's Rainbow Six Siege: Game Review!</font></p2>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><font color = "black">3 / 3</font></div>
+  <img src="RE2RMK.png" style="width:100%">
+  <p3><strong><font size = "30"><font color = "black"><font face ="Book Antigua"><center>Resident Evil 2 Remake: Game Review!</center></p3>
+
+
+
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+ 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+
+<div class="icon-bar">
+  <a href="https://www.facebook.com/Kotori-Itsuka-1483499061892641/" class="facebook"><i class="fa fa-facebook">f</i></a> 
+  <a href="https://twitter.com/Kuriiisukun" class="twitter"><i class="fa fa-twitter">t</i></a> 
+ <a href="https://www.youtube.com/channel/UCBQltSWsK4Bp6rEpZMGJ5Fg?view_as=subscriber" class="youtube"><i class="fa fa-youtube">YT</i></a> 
+ <a href="https://steamcommunity.com/profiles/76561198274273619/" class="steam"><i class="fa fa-steam">S</i></a> 
+</div>
+
+
+<div id="MyRig" class="tabcontent">
+  <h1><font color = "black">My PC</h1>
+    <h5>Samsung 2033SW 20-Inch Widescreen LCD Monitor</h5>
+     <img src="Monitor.jpg"style="width:25%"><br>
+   <ul>
+  <li>&#0149;20" Wide Full 1600x900 Resolution</li>
+  <li>&#0149;15000:1 Dynamic Contrast Ratio</li>
+  <li>&#0149;5ms Response Time with 15 pin D-Sub and DVI-D connectors</li>
+  <li>&#0149;Special Features: MagicBright, image size, color effect, MagicTune safe mode, DVI with HDCP</li>
+  <li>&#0149;Rich piano black finish, clear acrylic accent bar, and integrated cable housing</li>
+  <li></li>
+</ul>  
+<br>
+ <h5>Cooler Master:Devastator MS2K</h5>
+      <img src="MOUSE.jpg"style="width:25%"><br>
+      
+<ul>
+  <li>&#0149;Ergonomic ultra flat mousebody</li>
+  <li>&#0149;Large high-precision mouse wheel</li>
+  <li>&#0149;1000 - 1600 - 2000 DPI modes</li>
+  <li>&#0149;Solid rubber side pads for ultimate stability</li>
+  <li>&#0149;LED backlight Blue</li>
+</ul>
+<br>
+ <h5>Rakk Kusog Vibration Gaming Headset Green LED</h5>
+       <img src="HEADPHONES.jpg"style="width:25%"><br>
+       
+<ul>
+  <li>&#0149;Passive noise cancellation</li>
+  <li>&#0149;Touch sense gaming vibration technology</li>
+  <li>&#0149;Rich bass sound</li>
+  <li>&#0149;Designed for superior sound clarity</li>
+  
+</ul>
+<br>
+ <h5>RAKK Walna RGB touch mouse pad </h5>
+        <img src="rakkwalna.jpg"style="width:25%"><br>
+        
+<ul>
+  <li>&#0149;Micro-textured finish</li>
+  <li>&#0149;Optimized Surface coating</li>
+  <li>&#0149;9 LED effect color</li>
+  <li>&#0149;Non-slip rubber base</li>
+  <li>&#0149;2m braided fiber cable</li>
+</ul>
+<br>
+<h5>Rakk Sari RGB Gaming Keyboard</h5>
+         <img src="RAKKSARI.jpg"style="width:25%"><br>
+          
+<ul>
+  <li>&#0149;Rakk Keyboard Sari has 9-way color backlit and 9-LED effects</li>
+  <li>&#0149;Tactile touch, braided cable, an inclined Keyboard Design, with 15 enhanced multimedia function keys, and much improved ergonomics with an extended palm rest.</li>
+  <li>&#0149;Drainage holes design, effectively prevent the water damage to the keyboard.</li>
+</ul>
+<br>
+<h5>RAKK Panasque gaming case white</h5>
+          <img src="CASE.jpg"style="width:25%"><br>
+    <h5>PC Specification</h5>       
+<ul>
+  <li>&#0149;Operating System: Windows 10 64-bit</li>
+  <li>&#0149;Processor: AMD Ryzen 3 1200 Quad-core 3.1GHz</li>
+  <li>&#0149;RAM: 8192MB</li>
+  <li>&#0149;Graphics Card: NVIDIA GeForce GTX 1050 Ti 4018MB</li>
+  <li>&#0149;HDD: 1,048,576MB</li>
+</ul>
+</div>
+
+
+<div id="Games" class="tabcontent">
+<h6>~Monster Hunter World~</h6>
+<a href="MonsterHunter.html">
+<img src="MHW.png"style="width:50%">
+</a>
+
+<h6>~Rainbow Six Siege~</h6>
+<a href="R6.html">
+<img src="R6.jpg"style="width:50%"></a>
+
+<h6>~Resident Evil 2 Remake~</h6>
+<a href="RE2.html">
+<img src="RE2RMK.png"style="width:50%">
+</a>
+
+
+  
+</div>
+
+<div id="About" class="tabcontent">
+  <h5>ABOUT ME</h5>
+  <ul>
+  <li>Well, that’s always been one of the hardest things for me to ever write or talk about… Knowing where to stay is a real ball-ache! But this will just have to do!</li><br>
+
+<li>I’m a 3rd year college student who has now reached level 20 in life, with a girlfriend. I’m a life-long fan of the Resident Evil series, and a huge fan of FPS and strategy games.I created this blog for school project/educational purposes only.</li>
+  </ul>
+  <img src="ABCD.jpg"style="width:50%">
+</div>
+
+<button class="tablink" onclick="Gaming('Home', this, 'red')" id="defaultOpen"><img src="R6.jpg" style="width:100%"><font face="Century Gothic" size="9" color="White">HOME</font></button>
+<button class="tablink" onclick="Gaming('MyRig', this, 'red')"><img src="JF.jpg" style="width:100%"><font face="Century Gothic" size="9" color="White">MY PC</button>
+<button class="tablink" onclick="Gaming('Games', this, 'red')"><img src="SD.jpg" style="width:100%"><font face="Century Gothic" size="9" color="White">GAMES</button>
+<button class="tablink" onclick="Gaming('About', this, 'red')"><img src="RE2RMK.png" style="width:100%"><font face="Century Gothic" size="9" color="White">ABOUT ME</button>
+
+<script>
+function Gaming(GaMing,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(GaMing).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+
+   
+</body>
+</html> 
